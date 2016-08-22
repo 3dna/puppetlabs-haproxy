@@ -50,6 +50,7 @@
 # Jeremy Kitchen <jeremy@nationbuilder.com>
 #
 define haproxy::backend (
+  $mode             = undef,
   $collect_exported = true,
   $options          = {
     'option'  => [
